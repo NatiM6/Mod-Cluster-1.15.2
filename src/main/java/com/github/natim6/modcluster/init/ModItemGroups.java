@@ -1,5 +1,7 @@
 package com.github.natim6.modcluster.init;
 
+import java.util.function.Supplier;
+
 import com.github.natim6.modcluster.Main;
 
 import net.minecraft.item.ItemGroup;
@@ -9,20 +11,20 @@ public class ModItemGroups {
 	
 	public static class ModItemGroup extends ItemGroup {
 
-		private final ItemStack icon;
+		private final Supplier<ItemStack> iconSupplier;
 
-		public ModItemGroup(final String name, final ItemStack icon) {
+		public ModItemGroup(final String name, final Supplier<ItemStack> iconSupplier) {
 			super(name);
-			this.icon = icon;
+			this.iconSupplier = iconSupplier;
 		}
 
 		@Override
 		public ItemStack createIcon() {
-			return icon;
+			return iconSupplier.get();
 		}
 
 	}
 	
-	public static final ItemGroup MOD_ITEM_GROUP = new ModItemGroup(Main.MODID, new ItemStack(ModItems.EXAMPLE_ITEM));
+	public static final ItemGroup MOD_ITEM_GROUP = new ModItemGroup(Main.MODID, () -> new ItemStack(ModItems.EXAMPLE_ITEM));
 
 }
