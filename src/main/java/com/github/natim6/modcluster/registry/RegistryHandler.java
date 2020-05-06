@@ -25,5 +25,10 @@ public class RegistryHandler {
 
 	public static final RegistryObject<Item> EXAMPLE_ITEM = ITEMS.register("example_item",
 			() -> new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)));
+	
+	public RegistryHandler() {
+		BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
+		ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+	}
 
 }
