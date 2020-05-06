@@ -7,16 +7,16 @@ public class ModItemGroups {
 	
 	public static class ModItemGroup extends ItemGroup {
 
-		private final ItemStack iconSupplier;
+		private final ItemStack icon;
 
-		public ModItemGroup(final String name, final ItemStack iconSupplier) {
+		public ModItemGroup(final String name, final ItemStack icon) {
 			super(name);
-			this.iconSupplier = iconSupplier;
+			this.icon = icon;
 		}
 
 		@Override
 		public ItemStack createIcon() {
-			return iconSupplier;
+			return icon;
 		}
 
 	}
