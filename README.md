@@ -1,4 +1,4 @@
-# Mod-Cluster-1.15.2
+# Mod Cluster 1.15.2
 My collection of Minecraft 1.15.2 mods in one big clustermess. Or a little clustermess, I'm not that committed.
 
 It mostly a playing ground so you won't find anything of value here.
