@@ -4,7 +4,6 @@ import com.github.natim6.modcluster.Main;
 
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 
 public class ModItemGroups {
 	
@@ -24,6 +23,6 @@ public class ModItemGroups {
 
 	}
 	
-	public static final ItemGroup MOD_ITEM_GROUP = new ModItemGroup(Main.MODID, new ItemStack(Items.LIGHT_BLUE_BANNER));
+	public static final ItemGroup MOD_ITEM_GROUP = new ModItemGroup(Main.MODID, new ItemStack(ModItems.EXAMPLE_ITEM));
 
 }
