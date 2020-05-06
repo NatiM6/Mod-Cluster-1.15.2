@@ -1,6 +1,6 @@
 package com.github.natim6.modcluster.init;
 
-import com.github.natim6.modcluster.Main;
+import com.github.natim6.modcluster.registry.Main;
 
 import net.minecraft.item.Item;
 import net.minecraftforge.registries.ObjectHolder;

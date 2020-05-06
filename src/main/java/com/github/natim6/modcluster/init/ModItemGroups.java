@@ -2,7 +2,7 @@ package com.github.natim6.modcluster.init;
 
 import java.util.function.Supplier;
 
-import com.github.natim6.modcluster.Main;
+import com.github.natim6.modcluster.registry.Main;
 
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
