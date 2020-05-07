@@ -1,6 +1,6 @@
 {
   "item.modcluster.example_item": "Example Item",
-  "block.examplemod.example_block": "Example Block Name",
+  "block.modcluster.example_block": "Example Block",
   "commands.examplemod.examplecommand.error": "examplecommand errored!",
-  "itemGroup.modcluster.itemGroup": "Mod Cluster"
+  "itemGroup.modcluster": "Mod Cluster"
 }
