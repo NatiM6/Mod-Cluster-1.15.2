@@ -6,6 +6,7 @@ import org.apache.logging.log4j.Logger;
 import net.minecraftforge.fml.common.Mod;
 
 @Mod("modcluster")
+@Mod.EventBusSubscriber(modid = Main.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public final class Main {
 	public static final String MODID = "modcluster";
 	
@@ -13,5 +14,6 @@ public final class Main {
 	
 	public Main() {
 		LOGGER.debug("ModCluster startup ready!");
+		new RegistryHandler();
 	}
 }
